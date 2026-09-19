@@ -1,0 +1,7 @@
+{
+  "name": "rural-harvest-marketplace",
+  "private": true,
+  "workspaces": ["frontend", "backend"],
+  "scripts": {"dev": "concurrently \"npm run dev --workspace=backend\" \"npm run dev --workspace=frontend\"", "test": "npm run test --workspaces --if-present"},
+  "devDependencies": {"concurrently": "^9.1.2"}
+}
